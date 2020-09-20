@@ -1,108 +1,142 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
+
 <head>
-  <meta charset="utf-8">
-  <title>Sedona is Greater Canion</title>
+    <meta charset="utf-8">
+    <title>Sedona is Greater Canion</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <!--normalize.css или ссылка?-->
+    <link href="css/style.css" rel="stylesheet" />
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="index.html" title="Main Page">
-        <img src="http://dummyimage.com/41x50/81B3D2" alt="Welcome to Sedona!">
-      </a>
-      <ul>
-        <li><a href="blank.html">Информация</a></li>
-        <li><a href="blank.html">Фото и видео</a></li>
-        <li><a href="blank.html">Карта штата</a></li>
-        <li><a href="hotels.html">Гостиницы</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section>
-      <img src="http://placehold.it/1200x509/81B3D2/ffffff/?text=WELCOME+TO+GORGEOUSE+SEDONA" alt="Welcometo the gorgeous SEDONA. 
-      Because the Grand Canion sucks! Седона небольшой городок в Аризоне заслуживающий большего!">
-      <h1>Седона небольшой городок в Аризоне, заслуживающий лучшего!</h1>
-    </section>
-    <section>
-      <h1>Рассмотрим 5 причин почему Седона круче, чем Гранд Каньон!</h1>
-      <ul>
-        <li>
-          <h2>Настоящий городок.</h2>
-          <p>№1</p>
-          <p>Седона не атракцион для туристов, там течет своя жизнь</p>
-        </li>
-        <li>
-          <h2>Там есть мост дьявола.</h2>
-          <p>№2</p>
-          <p>Да, по нему можно пройти если конечно осмелитесь</p>
-        </li>
-        <li>
-          <h2>Небольшая площадь.</h2>
-          <p>№3</p>
-          <p>Все достопримечательности находятся очень близко</p>
-        <li>
-          <h2>Красивая дорога.</h2>
-          <p>№4</p>
-          <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-        </li>
-        <li>
-          <h2>Мало туристов.</h2>
-          <p>№5</p>
-          <p>Большинство едет к Гранд Ганьон и толпится там</p>
-        </li>
-      </ul>
-    </section>
-    <section>
-      <!-- Советы -->
-      <ul>
-        <li>
-          <h2>Жильё</h2>
-          <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-        </li>
-        <li>
-          <h2>Еда</h2>
-          <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-        </li>
-        <li>
-          <h2>Сувениры</h2>
-          <p>Не только китайского, но и метсного производства!</p>
-        </li>
-      </ul>
-    </section>
-    <section>
-      <h1>Заинтересовались?</h1>
-      <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <h1>Поиск гостиниц в Седоне</h1>
-      <!-- форма поиска брони -->
-      <button>Найти</button>
-    </section>
-  </main>
-  <footer>
-    <section>
-      <h3>Social links and contacts</h3>
-      <p>
-        <a href="blank.html">#VISITSEDONA</a>
-      </p>
-      <p>
-        Тел: <a href="74956660166"> +7 (495) 666-01-60</a>
-      </p>
-      <ul>
-        <li>
-          <a href="#">Twitter</a>
-        </li>
-        <li>
-          <a href="#">Facebook</a>
-        </li>
-        <li>
-          <a href="#">Youtube</a>
-        </li>
-      </ul>
-    </section>
-    <p>
-      website by
-      <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-    </p>
-  </footer>
+
+<body class="page-body">
+
+
+    <header class="main-header">
+        <nav class="main-navigation">
+            <a class="main-header-logo" href="index.html" title="Main Page">
+                <img src="http://dummyimage.com/41x50/81B3D2" alt="Welcome to Sedona!">
+            </a>
+            <ul class="site-navigation">
+                <li><a href="blank.html">Информация</a></li>
+                <li><a href="blank.html">Фото и видео</a></li>
+                <li><a href="blank.html">Карта штата</a></li>
+                <li><a href="hotelscatalog.html">Гостиницы</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="wrapper">
+
+        <section class="image-slogan">
+            <div class="image"><img src="http://placehold.it/1200x509/81B3D2/ffffff/?text=WELCOME+TO+GORGEOUSE+SEDONA" alt="Welcometo the gorgeous SEDONA.
+      Because the Grand Canion sucks! Седона небольшой городок в Аризоне заслуживающий большего!"></div>
+            <h1>Седона небольшой городок в Аризоне, заслуживающий лучшего!</h1>
+        </section>
+
+        <section class="features">
+            <h2>Рассмотрим 5 причин почему Седона круче, чем Гранд Каньон!</h2>
+            <ul class="features-list">
+
+                <li class="feature-item blue-item">
+                    <h3>Настоящий городок.</h3>
+                    <p class="number-sign">№1</p>
+                    <p>Седона не атракцион для туристов, там течет своя жизнь</p>
+                </li>
+
+                <!--<img src="http://placehold.it/800x256/81B3D2/ffffff/?text=SEDONA+VIEWS" alt="Sedona views">-->
+
+
+                <li class="feature-item blue-item">
+                    <h3>Там есть мост дьявола.</h3>
+                    <p class="number-sign">№2</p>
+                    <p>Да, по нему можно пройти если конечно осмелитесь</p>
+                </li>
+
+                <!--<img src="http://placehold.it/800x256/81B3D2/ffffff/?text=SEDONA+VIEWS" alt="Sedona views">-->
+
+
+                <li class="feature-item grey-item">
+                    <h3>Небольшая площадь.</h3>
+                    <p class="number-sign">№3</p>
+                    <p>Все достопримечательности находятся очень близко</p>
+
+
+
+                    <li class="feature-item grey-item">
+                        <h3>Красивая дорога.</h3>
+                        <p class="number-sign">№4</p>
+                        <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                    </li>
+
+
+                    <li class="feature-item grey-item">
+                        <h3>Мало туристов.</h3>
+                        <p class="number-sign">№5</p>
+                        <p>Большинство едет к Гранд Ганьон и толпится там</p>
+                    </li>
+
+            </ul>
+        </section>
+
+        <section class="advice">
+            <!-- Советы -->
+            <ul class="advices-list">
+                <li class="icon-house">
+                    <h3 class="item-header">Жильё</h3>
+                    <p class="item-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                </li>
+                <li class="icon-food">
+                    <h3 class="item-header">Еда</h3>
+                    <p class="item-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                </li>
+                <li class="icon-souvenir">
+                    <h3 class="item-header">Сувениры</h3>
+                    <p class="item-text">Не только китайского, но и метсного производства!</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="searching-form">
+            <h2 class="item-header">Заинтересовались?</h2>
+            <p class="item-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <h2 class="search-form-header">Поиск гостиниц в Седоне</h2>
+            <!-- форма поиска брони -->
+            <button class="blue-button">Найти</button>
+        </section>
+    </main>
+
+    <footer class="page-footer main-footer">
+        <section class="footer-contacts">
+            <h3>Инстаграм и телефон</h3>
+            <p>
+                <a class="item-header" href="blank.html">#VISITSEDONA</a>
+            </p>
+            <p>
+                Тел: <a class="item-header" href="74956660166"> +7 (495) 666-01-60</a>
+            </p>
+        </section>
+        <section class="footer-social">
+            <h3>Социальные сети</h3>
+            <ul>
+                <li>
+                    <a class="social-button" href="#">Twitter</a>
+                </li>
+                <li>
+                    <a class="social-button" href="#">Facebook</a>
+                </li>
+                <li>
+                    <a class="social-button" href="#">Youtube</a>
+                </li>
+            </ul>
+        </section>
+        <p class="footer-copyright">
+            website by
+            <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+        </p>
+    </footer>
 </body>
+
 </html>

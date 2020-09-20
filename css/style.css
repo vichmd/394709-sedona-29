@@ -1,0 +1,283 @@
+/* Variables */
+
+:root {
+    --black: #000000;
+    --light-black: #333333;
+    --white: #FFFFFF;
+    --ligh-blue: #81B3D2;
+    --darker-blue: #669EC0;
+    --darkest-blue: #5496BD;
+    --main-background-gray: #888888;
+    --drop-shadow-white-black: rgba(0, 1, 1, 0.2);
+    --background-light-grey: #EEEEEE;
+    --filter-background-light-grey: rgba(0, 1, 1, 0.15);
+    --filter-input-grey: #F2F2F2;
+    --brown: #766357;
+    --darker-brown: #604E43;
+    --darkest-brown: #503E33;
+    --footer-grey: rgba(255, 255, 255, 0.9);
+    /*как точно понять, что именно вписывать в эти свойства.*/
+}
+
+
+/*body*/
+
+body {
+    min-width: 1200px;
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: var(--light-black);
+    background-color: var(--white);
+    text-align: center;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+li {
+    list-style: none;
+}
+
+
+/*main navigation*/
+
+.site-navigation a {
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--black);
+    line-height: 26px;
+    text-align: center;
+}
+
+
+/*image slogan*/
+
+.image {
+    background-image: url("http://placehold.it/1200x509/81B3D2/ffffff/?text=WELCOME+TO+GORGEOUSE+SEDONA");
+}
+
+h1 {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+    color: var(--black);
+    text-align: center;
+}
+
+
+/*features*/
+
+h2 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    columns: var(--light-black);
+}
+
+a {
+    color: #000;
+}
+
+button {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 21.17px;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+button:active {
+    opacity: 0.3;
+}
+
+.feature-item {
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: 700;
+    height: 256px;
+    vertical-align: middle;
+}
+
+p {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: normal;
+}
+
+.blue-item {
+    background-color: var(--ligh-blue);
+    color: var(--white);
+}
+
+.grey-item {
+    background-color: var(--background-light-grey);
+}
+
+
+/** Generic */
+
+.item-header {
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.item-text {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+/*Advice*/
+
+
+/*Searching form*/
+
+.searching-form h2.item-header {
+    font-size: 30px;
+}
+
+.search-form-header {
+    background-color: var(--brown);
+    color: var(--white);
+    text-align: center;
+    vertical-align: middle;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700px;
+}
+
+.search-form-header:hover {
+    background-color: var(--darker-brown);
+}
+
+.search-form-header:active {
+    background-color: var(--darkest-brown);
+    opacity: 0.3;
+}
+
+.search-form-button {
+    background-color: var(--ligh-blue);
+    color: var(--white);
+}
+
+.search-form-button:hover {
+    background-color: var(--darker-blue);
+}
+
+.search-form-button:active {
+    background-color: var(--darkest-blue);
+    opacity: 0.3;
+}
+
+
+/** footer */
+
+.page-footer .item-header {
+    line-height: 26px;
+}
+
+.footer-copyright {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    color: var(--black);
+}
+
+.button-blue {
+    background-color: var(--ligh-blue);
+}
+
+.button-blue:hover {
+    background-color: var(--darker-blue);
+}
+
+.button-blue:active {
+    background-color: var(--darkest-blue);
+}
+
+.button-brown {
+    background-color: var(--brown);
+}
+
+.button-brown:active {
+    background-color: var(--darker-brown);
+}
+
+.button-brown:hover {
+    background-color: var(--darkest-brown);
+}
+
+.item-header-catalog {
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.sorting-header {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.sorting-tag {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+a.active-item {
+    color: var(--ligh-blue);
+    opacity: 100;
+    text-decoration: none;
+}
+
+.location-propreties {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: var(--light-black)
+}
+
+.sorting-tag {
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--black);
+    opacity: 0.3;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+.sorting-tag:hover {
+    color: var(--ligh-blue)
+}
+
+.sorting-tag:active {
+    color: var(--black);
+    opacity: 100;
+}
+
+.hotel-name:hover {
+    color: var(--ligh-blue);
+}
+
+.hotel-name:active {
+    color: var(--black);
+    opacity: 0.3;
+}
