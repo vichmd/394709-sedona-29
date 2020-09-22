@@ -4,37 +4,32 @@
     --black: #000000;
     --light-black: #333333;
     --white: #FFFFFF;
-    --ligh-blue: #81B3D2;
+    --white-opaque: rgba(255, 255, 255, 0.3);
+    --light-blue: #81B3D2;
     --darker-blue: #669EC0;
     --darkest-blue: #5496BD;
-    --main-background-gray: #888888;
+    --brown: #766357;
+    --darker-brown: #604E43;
+    --darkest-brown: #503E33;
     --drop-shadow-white-black: rgba(0, 1, 1, 0.2);
     --background-light-grey: #EEEEEE;
     --filter-background-light-grey: rgba(0, 1, 1, 0.15);
     --filter-input-grey: #F2F2F2;
-    --brown: #766357;
-    --darker-brown: #604E43;
-    --darkest-brown: #503E33;
     --footer-grey: rgba(255, 255, 255, 0.9);
-    /*как точно понять, что именно вписывать в эти свойства.*/
+    --main-background-gray: #888888;
 }
 
 
-/*body*/
+/* body */
 
 body {
     min-width: 1200px;
     margin: 0;
     padding: 0;
     font-family: "PT Sans", "Arial", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 21px;
     text-transform: uppercase;
-    color: var(--light-black);
     background-color: var(--white);
     text-align: center;
-    font-weight: normal;
 }
 
 a {
@@ -46,78 +41,70 @@ img {
     height: auto;
 }
 
-li {
+
+/* main navigation */
+
+.site-navigation a {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    color: var(--black);
+    text-align: center;
+}
+
+.site-navigation li {
     list-style: none;
 }
 
 
-/*main navigation*/
-
-.site-navigation a {
-    font-weight: 700;
-    font-size: 14px;
-    color: var(--black);
-    line-height: 26px;
-    text-align: center;
-}
-
-
-/*image slogan*/
+/* slogan */
 
 .image {
     background-image: url("http://placehold.it/1200x509/81B3D2/ffffff/?text=WELCOME+TO+GORGEOUSE+SEDONA");
 }
 
-h1 {
+.text-slogan {
     font-size: 21px;
-    font-weight: 700;
     line-height: 26px;
+    font-weight: 700;
     color: var(--black);
+    margin: 0;
     text-align: center;
 }
 
 
-/*features*/
+/* features */
 
-h2 {
+ul .feature-item {
+    list-style: none;
+}
+
+.feature-header {
     font-size: 14px;
-    font-weight: 400;
     line-height: 26px;
-    columns: var(--light-black);
+    font-weight: 400;
+    color: var(--light-black);
+    text-align: center;
 }
 
-a {
-    color: #000;
-}
-
-button {
-    font-weight: 700;
-    font-size: 21px;
-    line-height: 21.17px;
-    text-transform: uppercase;
-    color: var(--white);
-}
-
-button:active {
-    opacity: 0.3;
-}
-
-.feature-item {
+.feature-list-header {
     font-size: 21px;
     line-height: 21px;
     font-weight: 700;
-    height: 256px;
-    vertical-align: middle;
+    color: var(--black);
+    text-align: center;
 }
 
-p {
+.feature-list-text {
     font-size: 14px;
     line-height: 21px;
-    font-weight: normal;
+    font-weight: 400;
+    color: var(--light-black);
+    text-align: center;
 }
 
 .blue-item {
-    background-color: var(--ligh-blue);
+    background-color: var(--light-blue);
     color: var(--white);
 }
 
@@ -126,12 +113,19 @@ p {
 }
 
 
-/** Generic */
+/* advice */
+
+.icon-house,
+.icon-food,
+.icon-souvenir {
+    list-style: none;
+}
 
 .item-header {
     font-size: 21px;
     line-height: 21px;
     font-weight: 700;
+    color: var(--black);
     text-align: center;
 }
 
@@ -139,57 +133,74 @@ p {
     font-size: 14px;
     line-height: 21px;
     font-weight: 400;
+    color: var(--light-black);
     text-align: center;
 }
 
 
-/*Advice*/
+/* searching form */
 
-
-/*Searching form*/
-
-.searching-form h2.item-header {
+.searching-question {
     font-size: 30px;
+    line-height: 24px;
+    font-weight: 700;
+    color: var(--black);
+    text-align: center;
 }
 
-.search-form-header {
-    background-color: var(--brown);
-    color: var(--white);
+.searching-form-text {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--light-black);
     text-align: center;
-    vertical-align: middle;
+}
+
+.searching-form-header {
     font-size: 21px;
     line-height: 26px;
-    font-weight: 700px;
+    font-weight: 700;
+    color: var(--white);
+    background-color: var(--brown);
+    text-align: center;
+    vertical-align: middle;
 }
 
-.search-form-header:hover {
+.searching-form-header:hover {
     background-color: var(--darker-brown);
 }
 
-.search-form-header:active {
+.searching-form-header:active {
     background-color: var(--darkest-brown);
-    opacity: 0.3;
+    color: var(--white-opaque);
 }
 
-.search-form-button {
-    background-color: var(--ligh-blue);
+.search-button {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    background-color: var(--light-blue);
     color: var(--white);
 }
 
-.search-form-button:hover {
+.search-button:hover {
     background-color: var(--darker-blue);
 }
 
-.search-form-button:active {
+.search-button:active {
     background-color: var(--darkest-blue);
-    opacity: 0.3;
+    color: var(--white-opaque);
 }
 
 
-/** footer */
+/* footer */
 
-.page-footer .item-header {
+.footer-contacts a {
+    font-size: 21px;
     line-height: 26px;
+    font-weight: 700;
+    text-transform: none;
+    color: var(--black);
 }
 
 .footer-copyright {
@@ -199,60 +210,48 @@ p {
     color: var(--black);
 }
 
-.button-blue {
-    background-color: var(--ligh-blue);
+ul.social {
+    list-style: none;
 }
 
-.button-blue:hover {
+li .social-button {
+    background-color: var(--light-blue);
+}
+
+li .social-button:hover {
     background-color: var(--darker-blue);
 }
 
-.button-blue:active {
+li .social-button:active {
     background-color: var(--darkest-blue);
 }
 
-.button-brown {
-    background-color: var(--brown);
-}
 
-.button-brown:active {
-    background-color: var(--darker-brown);
-}
+/* sorting */
 
-.button-brown:hover {
-    background-color: var(--darkest-brown);
-}
-
-.item-header-catalog {
+.search-results {
     font-size: 21px;
     line-height: 26px;
+    font-weight: 700;
+    color: var(--black);
+}
+
+ul.sorting {
+    list-style: none;
 }
 
 .sorting-header {
     font-size: 12px;
     line-height: 18px;
     font-weight: 400;
-    text-align: center;
-}
-
-.sorting-tag {
-    font-size: 12px;
-    line-height: 18px;
-    font-weight: 400;
+    color: var(--black);
     text-align: center;
 }
 
 a.active-item {
-    color: var(--ligh-blue);
+    color: var(--light-blue);
     opacity: 100;
     text-decoration: none;
-}
-
-.location-propreties {
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: 400;
-    color: var(--light-black)
 }
 
 .sorting-tag {
@@ -265,7 +264,7 @@ a.active-item {
 }
 
 .sorting-tag:hover {
-    color: var(--ligh-blue)
+    color: var(--light-blue)
 }
 
 .sorting-tag:active {
@@ -273,11 +272,80 @@ a.active-item {
     opacity: 100;
 }
 
+
+/* results */
+
+ul.hotels {
+    list-style: none;
+}
+
+.item-header-catalog {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    color: var(--black);
+}
+
 .hotel-name:hover {
-    color: var(--ligh-blue);
+    color: var(--light-blue);
 }
 
 .hotel-name:active {
     color: var(--black);
     opacity: 0.3;
+}
+
+.location-type-price {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: var(--light-black)
+}
+
+.rating {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    background-color: var(--filter-input-grey);
+}
+
+.stars {
+    background-color: var(--light-blue);
+}
+
+.control {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 700;
+    color: var(--white);
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 17px;
+    padding-left: 16px;
+}
+
+.details {
+    background-color: var(--light-blue);
+}
+
+.details:hover {
+    background-color: var(--darker-blue);
+}
+
+.details:active {
+    background-color: var(--darkest-blue);
+    color: var(--white-opaque);
+}
+
+.reservation {
+    background-color: var(--brown);
+}
+
+.reservation:hover {
+    background-color: var(--darkest-brown);
+}
+
+.reservation:active {
+    background-color: var(--darker-brown);
+    color: var(--white-opaque);
 }
