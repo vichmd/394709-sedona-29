@@ -388,7 +388,7 @@ img {
     color: var(--white-opaque);
 }
 
-.image-map {
+.map {
     background-image: url(/Users/vich/Documents/GitHub/394709-sedona-29/img/map.png);
     background-position: center;
     background-repeat: no-repeat;
