@@ -158,7 +158,7 @@ img {
     padding-left: 371.38px;
     padding-right: 371.96px;
     height: 508.5px;
-    background-image: url(/Users/vich/Documents/GitHub/394709-sedona-29/img/welcome-bottom.png), url("/Users/vich/Documents/GitHub/394709-sedona-29/img/background-mountains.jpg");
+    background-image: url(../img/welcome-bottom.png), url(../img/background-mountains.jpg);
     background-position: bottom, center;
     background-color: var(--darkest-blue);
     background-repeat: no-repeat, no-repeat;
@@ -236,11 +236,11 @@ img {
 }
 
 .feature-list-image-one {
-    background-image: url(/Users/vich/Documents/GitHub/394709-sedona-29/img/feature-1.jpg);
+    background-image: url(../img/feature-1.jpg);
 }
 
 .feature-list-image-two {
-    background-image: url(/Users/vich/Documents/GitHub/394709-sedona-29/img/feature-2.jpg);
+    background-image: url(../img/feature-2.jpg);
 }
 
 .grey-item {
@@ -272,19 +272,19 @@ img {
 }
 
 .icon-house {
-    background-image: url(/Users/vich/Documents/GitHub/394709-sedona-29/img/icon-house.svg);
+    background-image: url(../img/icon-house.svg);
     background-position: center 64.15px;
     background-repeat: no-repeat;
 }
 
 .icon-food {
-    background-image: url(/Users/vich/Documents/GitHub/394709-sedona-29/img/icon-burger.svg);
+    background-image: url(../img/icon-burger.svg);
     background-position: center 64.15px;
     background-repeat: no-repeat;
 }
 
 .icon-souvenir {
-    background-image: url(/Users/vich/Documents/GitHub/394709-sedona-29/img/icon-gift.svg);
+    background-image: url(../img/icon-gift.svg);
     background-position: center 64.15px;
     background-repeat: no-repeat;
 }
@@ -389,7 +389,7 @@ img {
 }
 
 .map {
-    background-image: url(/Users/vich/Documents/GitHub/394709-sedona-29/img/map.png);
+    background-image: url(../img/map.png);
     background-position: center;
     background-repeat: no-repeat;
     height: 594px;
@@ -441,7 +441,7 @@ img {
     outline-offset: -5px;*/
     padding-top: 49px;
     margin: 0px;
-    background-image: url(/Users/vich/Documents/GitHub/394709-sedona-29/img/logo-htmlacademy.svg);
+    background-image: url(../img/logo-htmlacademy.svg);
     background-repeat: no-repeat;
     background-position: center center;
     height: 120px;
