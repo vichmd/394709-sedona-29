@@ -30,8 +30,8 @@ body {
     text-transform: uppercase;
     text-align: center;
     background-color: var(--filter-input-grey);
-    outline: 5px solid rgba(229, 255, 0, 0.7);
-    outline-offset: -5px;
+    /*outline: 5px solid rgba(229, 255, 0, 0.7);
+    outline-offset: -5px;*/
 }
 
 a {
@@ -47,6 +47,19 @@ img {
     list-style: none;
     padding: 0px;
     margin: 0px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 
@@ -73,20 +86,23 @@ img {
     width: 1200px;
     margin: 0px auto;
     padding: 0px;
-    outline: 5px solid rgba(4, 0, 255, 0.7);
-    outline-offset: -5px;
+    /*outline: 5px solid rgba(4, 0, 255, 0.7);
+    outline-offset: -5px;*/
     background-color: var(--white);
     display: grid;
     grid-template-rows: min-content 1fr min-content;
     align-content: start;
+    min-height: 100vh;
+    position: relative;
+    box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
 }
 
 
 /* Main header */
 
 .main-header {
-    outline: 5px solid rgba(0, 255, 0, 0.7);
-    outline-offset: -5px;
+    /* outline: 5px solid rgba(0, 255, 0, 0.7);
+    outline-offset: -5px;*/
 }
 
 
@@ -95,10 +111,21 @@ img {
 .main-header-logo {
     width: 138px;
     height: 70px;
-    outline: 5px solid rgba(255, 0, 0, 0.3);
-    outline-offset: -5px;
+    /*outline: 5px solid rgba(255, 0, 0, 0.3);
+    outline-offset: -5px;*/
     justify-self: center;
-    /* position: absolute; */
+    position: absolute;
+    top: 0px;
+    left: 531px;
+}
+
+.site-navigation {
+    /* outline: 5px solid rgba(0, 255, 255, 0.3);
+    outline-offset: -5px;*/
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 72px;
+    height: 56px;
 }
 
 .site-navigation a {
@@ -122,16 +149,20 @@ img {
     text-align: right;
 }
 
-.site-navigation {
-    outline: 5px solid rgba(0, 255, 255, 0.3);
-    outline-offset: -5px;
-    display: flex;
-    padding: 15px 72px;
-    height: 56px;
-}
-
 
 /*index-page*/
+
+.image-slogan {
+    padding-top: 77.35px;
+    padding-bottom: 80.76px;
+    padding-left: 371.38px;
+    padding-right: 371.96px;
+    height: 508.5px;
+    background-image: url(/Users/vich/Documents/GitHub/394709-sedona-29/img/welcome-bottom.png), url("/Users/vich/Documents/GitHub/394709-sedona-29/img/background-mountains.jpg");
+    background-position: bottom, center;
+    background-color: var(--darkest-blue);
+    background-repeat: no-repeat, no-repeat;
+}
 
 
 /* slogan */
@@ -144,9 +175,10 @@ img {
     margin: 0;
     text-align: center;
     padding-top: 42.5px;
-    padding-bottom: 0px;
+    padding-bottom: 16.5px;
     padding-left: 365px;
     padding-right: 365px;
+    height: 122.5px;
 }
 
 
@@ -159,8 +191,10 @@ img {
     color: var(--light-black);
     text-align: center;
     margin: 0px;
-    padding-top: 15px;
+    padding-top: 0px;
     padding-bottom: 51px;
+    padding-left: 340px;
+    padding-right: 341px;
 }
 
 .feature-list-header {
@@ -201,6 +235,14 @@ img {
     color: var(--white);
 }
 
+.feature-list-image-one {
+    background-image: url(/Users/vich/Documents/GitHub/394709-sedona-29/img/feature-1.jpg);
+}
+
+.feature-list-image-two {
+    background-image: url(/Users/vich/Documents/GitHub/394709-sedona-29/img/feature-2.jpg);
+}
+
 .grey-item {
     background-color: var(--background-light-grey);
     height: 256px;
@@ -214,7 +256,7 @@ img {
     padding: 0px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column: 1/-1;
+    /*grid-column: 1/-1;*/
 }
 
 .part-one {
@@ -227,6 +269,24 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column: 1/-1;
+}
+
+.icon-house {
+    background-image: url(/Users/vich/Documents/GitHub/394709-sedona-29/img/icon-house.svg);
+    background-position: center 64.15px;
+    background-repeat: no-repeat;
+}
+
+.icon-food {
+    background-image: url(/Users/vich/Documents/GitHub/394709-sedona-29/img/icon-burger.svg);
+    background-position: center 64.15px;
+    background-repeat: no-repeat;
+}
+
+.icon-souvenir {
+    background-image: url(/Users/vich/Documents/GitHub/394709-sedona-29/img/icon-gift.svg);
+    background-position: center 64.15px;
+    background-repeat: no-repeat;
 }
 
 .part-two {
@@ -242,9 +302,9 @@ img {
 
 .item-text {
     padding-top: 23px;
-    padding-bottom: 25px;
-    padding-left: 73px;
-    padding-right: 65px;
+    padding-bottom: 72px;
+    padding-left: 55px;
+    padding-right: 55px;
     margin: 0px;
 }
 
@@ -255,7 +315,7 @@ img {
     color: var(--black);
     text-align: center;
     margin: 0px;
-    padding-top: 30.92px;
+    padding-top: 160px;
 }
 
 .item-text {
@@ -275,6 +335,9 @@ img {
     font-weight: 700;
     color: var(--black);
     text-align: center;
+    padding-top: 58px;
+    padding-bottom: 55px;
+    margin: 0px;
 }
 
 .searching-form-text {
@@ -283,6 +346,10 @@ img {
     font-weight: 400;
     color: var(--light-black);
     text-align: center;
+    padding-left: 383px;
+    padding-right: 382px;
+    padding-bottom: 78px;
+    margin: 0px;
 }
 
 .searching-form-button {
@@ -321,14 +388,33 @@ img {
     color: var(--white-opaque);
 }
 
+.image-map {
+    background-image: url(/Users/vich/Documents/GitHub/394709-sedona-29/img/map.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 594px;
+}
+
 
 /* footer */
 
 .main-footer {
-    outline: 5px solid rgba(255, 0, 0, 0.7);
-    outline-offset: -5px;
+    /*outline: 5px solid rgba(255, 0, 0, 0.7);
+    outline-offset: -5px;*/
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    margin: 0px;
+    background-color: #FFFFFF;
+    opacity: 90%;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+.footer-contacts .item-header {
+    padding-top: 23px;
+    padding-bottom: 36px;
 }
 
 .footer-contacts a {
@@ -337,11 +423,13 @@ img {
     font-weight: 700;
     text-transform: none;
     color: var(--black);
+    margin: 0px;
 }
 
 .footer-contacts-list {
-    outline: 5px solid rgba(0, 255, 255, 0.7);
-    outline-offset: -5px;
+    margin: 0px;
+    /*outline: 5px solid rgba(0, 255, 255, 0.7);
+    outline-offset: -5px;*/
 }
 
 .footer-copyright {
@@ -349,27 +437,56 @@ img {
     font-weight: 400;
     line-height: 26px;
     color: var(--black);
-    outline: 5px solid rgba(255, 0, 255, 0.7);
-    outline-offset: -5px;
-    padding: 0px;
+    /* outline: 5px solid rgba(255, 0, 255, 0.7);
+    outline-offset: -5px;*/
+    padding-top: 49px;
     margin: 0px;
+    background-image: url(/Users/vich/Documents/GitHub/394709-sedona-29/img/logo-htmlacademy.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 120px;
+    padding-left: 63px;
+    text-align: left;
+}
+
+.footer-copyright .button {
+    color: var(--black);
 }
 
 .footer-social {
-    outline: 5px solid rgba(0, 255, 0, 0.7);
-    outline-offset: -5px;
+    /* outline: 5px solid rgba(0, 255, 0, 0.7);
+    outline-offset: -5px; */
+    align-items: center;
 }
 
-li .social-button {
+.footer-social ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 150px;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+.social-button {
     background-color: var(--light-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 48px;
 }
 
-li .social-button:hover {
+.social-button:hover {
     background-color: var(--darker-blue);
 }
 
-li .social-button:active {
+.social-button:active {
     background-color: var(--darkest-blue);
+}
+
+.social-button:active path {
+    fill-opacity: 0.3;
 }
 
 
