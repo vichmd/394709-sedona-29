@@ -28,17 +28,17 @@
             <section class="slogan">
                 <div class="image-slogan"><img src="img/welcome-to-sedona.svg" width="456" height="350" alt="Welcome to the gorgeous SEDONA.
       Because the Grand Canion sucks!"></div>
-                <h1 class="text-slogan">Седона небольшой городок в Аризоне, заслуживающий лучшего!</h1>
+                <h1 class="text-slogan">Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</h1>
             </section>
             <section class="features">
-                <h2 class="features-header">Рассмотрим 5 причин почему Седона круче, чем Гранд Каньон!</h2>
+                <h2 class="features-header">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h2>
 
                 <ul class="features-list no-bullets">
                     <li class="feature-item part-one">
                         <div class="blue-item">
-                            <h3 class="feature-list-header white-font">Настоящий городок.</h3>
-                            <p class="feature-list-text white-font">№1</p>
-                            <p class="feature-list-text white-font">Седона не атракцион для туристов, там течет своя жизнь</p>
+                            <h3 class="feature-list-header white-font">Настоящий городок</h3>
+                            <p class="feature-list-text white-font">&mdash; №1 &mdash;</p>
+                            <p class="feature-list-text white-font">Седона - не атракцион для туристов, там течёт своя жизнь</p>
                         </div>
                         <div class="feature-list-image-one"></div>
                         <ul class="advices-list no-bullets ">
@@ -68,41 +68,61 @@
                     <li class="feature-item part-two">
                         <div class="feature-list-image-two"></div>
                         <div class="blue-item ">
-                            <h3 class="feature-list-header white-font ">Там есть мост дьявола.</h3>
-                            <p class="feature-list-text white-font">№2</p>
-                            <p class="feature-list-text white-font">Да, по нему можно пройти если конечно осмелитесь</p>
+                            <h3 class="feature-list-header white-font ">Там есть <br>мост дьявола</h3>
+                            <p class="feature-list-text white-font">&mdash; №2 &mdash;</p>
+                            <p class="feature-list-text white-font">Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
                         </div>
                     </li>
                     <li class="feature-item part-three grey-item">
                         <div>
-                            <h3 class="feature-list-header">Небольшая площадь.</h3>
-                            <p class="feature-list-text">№3</p>
+                            <h3 class="feature-list-header">Небольшая площадь</h3>
+                            <p class="feature-list-text">&mdash; №3 &mdash;</p>
                             <p class="feature-list-text">Все достопримечательности находятся очень близко</p>
                         </div>
 
                     </li>
                     <li class="feature-item part-three grey-item">
                         <div>
-                            <h3 class="feature-list-header">Красивая дорога.</h3>
-                            <p class="feature-list-text">№4</p>
+                            <h3 class="feature-list-header">Красивая дорога</h3>
+                            <p class="feature-list-text">&mdash; №4 &mdash;</p>
                             <p class="feature-list-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                         </div>
                     </li>
                     <li class="feature-item part-three grey-item">
                         <div>
-                            <h3 class="feature-list-header">Мало туристов.</h3>
-                            <p class="feature-list-text">№5</p>
+                            <h3 class="feature-list-header">Мало туристов</h3>
+                            <p class="feature-list-text">&mdash; №5 &mdash;</p>
                             <p class="feature-list-text">Большинство едет к Гранд Ганьон и толпится там</p>
                         </div>
                     </li>
                 </ul>
             </section>
-            <section class="searching-form box">
-                <h2 class="searching-question">Заинтересовались?</h2>
-                <p class="searching-form-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-                <button class="searching-form-button">Поиск гостиниц в Седоне</button><br>
+            <section class="searching-box searching-form">
+                <h2 class="searching-form-header">Заинтересовались?</h2>
+                <p class="searching-form-info">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
                 <!-- форма поиска брони -->
-                <button class="search-button ">Найти</button>
+                <button class="searching-box-button">Поиск гостиниц в Седоне</button>
+                <form class="searching-box-form" action="https://echo.htmlacademy.ru" method="get">
+                    <p class="searching-box-item">
+                        <label for="arrival"> Дата заезда:</label>
+                        <input id="arrival" type="text" name="arrival-date" placeholder="24 апреля 2017" required>
+                    </p>
+                    <p class="searching-box-item">
+                        <label for="departure"> Дата выезда:</label>
+                        <input id="departure" type="text" name="departure-date" placeholder="4 июля 2017" required>
+                    </p>
+                    <div class="guests">
+                        <p class="searching-box-item">
+                            <label for="guests-adults"> Взрослые:</label>
+                            <input id="guests-adults" type="text" name="adults" placeholder="2" required>
+                        </p>
+                        <p class="searching-box-item">
+                            <label for="guests-kids">Дети:</label>
+                            <input id="guests-kids" type="text" name="kids" placeholder="0" required>
+                        </p>
+                    </div>
+                    <input class="search-button" type="submit" value="Найти">
+                </form>
             </section>
             <section class="map">
                 <h2 class="image-map visually-hidden"> Карта</h2>
@@ -111,11 +131,11 @@
         <footer class="page-footer main-footer ">
             <section class="footer-contacts ">
                 <h3 class="visually-hidden">Инстаграм и телефон</h3>
-                <p>
-                    <a class="item-header " href="blank.html ">#VISITSEDONA</a>
+                <p class="visit-sedona-telephone">
+                    <a class="item-header-footer-contacts" href="blank.html ">#VISITSEDONA</a>
                 </p>
-                <p>
-                    <a class="item-header " href="74956660166 "> ТЕЛ: +7 (495) 666-01-60</a>
+                <p class="visit-sedona-telephone">
+                    <a class="item-header-footer-contacts" href="74956660166 "> ТЕЛ: +7 (495) 666-01-60</a>
                 </p>
             </section>
             <section class="footer-social ">
